@@ -2,24 +2,28 @@ import colorbar from '../../Assets/COLORBAR.png'
 import circleThick from '../../Assets/THICK_circle.svg'
 import circleThin from '../../Assets/Thin_Circle.svg'
 import circles from '../../Assets/Circles.svg'
-import Ball from '../../Assets/BALL.svg'
+import Ball from '../../Assets/2_BALLS.svg'
+import singleCircle from '../../Assets/BALL.svg'
+
 import '../../App.css'
 
 
 const Layout = ({ children }) => {
     return <>
         <div className="container-fluid p-0 overflow-hidden" style={{position : 'relative'}} >
-            <img className='' src={colorbar} alt="c-bar" style={{ position: 'absolute', top: '-17px', left: '-10px', zIndex: '-1' }} />
-            <img className='' src={circleThick} alt="c-bar" style={{ width: '10rem', position: 'absolute', right: '-50px', top: '-50px', zIndex: '-1' }} />
-            <img className='' src={circleThin} alt="c-bar" style={{ width: '10rem', position: 'absolute', bottom: '50px', left: '-50px', zIndex: '-1' }} />
-            <img className='' src={Ball} alt="c-bar" style={{ width: '10rem', position: 'absolute', top: '33rem', left: '-70px', zIndex: '-1' }} />
-            <img className='' src={circles} alt="c-bar" style={{ width: '10rem', position: 'absolute', bottom: '38rem', left: '-110px', zIndex: '-1' }} />
-            <img className='' src={colorbar} alt="c-bar" style={{ position: 'absolute', bottom: '0px', right: '-10px', zIndex: '-1' }} />
+            <img className='colorbarTop_mb' src={colorbar} alt="c-bar" style={{width : '60%', position: 'absolute', top: '-45px', left: '-10px', zIndex: '-1' }} />
+            <img className='circleThick_mb' src={circleThick} alt="c-bar" style={{ width: '25rem', position: 'absolute', right: '-170px', top: '-170px', zIndex: '-1' }} />
+            <img className='circleThin_mb' src={circleThin} alt="c-bar" style={{ width: '10rem', position: 'absolute', bottom: '90px', left: '-50px', zIndex: '-1' }} />
+            <img className='d-none d-lg-block' src={Ball} alt="c-bar" style={{ width: '12rem', position: 'absolute', top: '41rem', left: '-100px', zIndex: '-1' }} />
+            <img className='img-fluid d-none d-lg-block' src={circles} alt="c-bar" style={{ width: '18rem', position: 'absolute', bottom: '49rem', left: '-190px', zIndex: '-1' }} />
+            <img className='colorbarBottom_mb' src={colorbar} alt="c-bar " style={{ width : '90%', position: 'absolute', bottom: '-17px', right: '-22px', zIndex: '-1' }} />
+            <img className='img-fluid singleCircleOne_mb ' src={singleCircle} alt="c-bar" style={{ width: '3rem', position: 'absolute', bottom: '112rem', right: '10%', zIndex: '-1' }} />
+            <img className='img-fluid singleCircle_mb' src={singleCircle} alt="c-bar" style={{ width: '1rem', position: 'absolute', bottom: '47rem', right: '20%', zIndex: '-1' }} />
 
 
             <div className="container">
                 <div className="row " >
-                    <div className="col-12 col-lg-9 mx-auto">
+                    <div className="col-12 col-xl-9 mx-auto">
                         {children}
                     </div>
                 </div>

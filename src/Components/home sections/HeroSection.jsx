@@ -1,6 +1,9 @@
 import logo from '../../Assets/LOGO_ECOFACTOR_FINAL (1).svg'
 import laptop from '../../Assets/Laptop_ecofactor.png'
-import Button from '../constant/Button'
+import btnContact from '../../Assets/BT_CONTACT.svg'
+import circle from '../../Assets/BALL.svg'
+
+
 
 
 
@@ -8,30 +11,32 @@ import Button from '../constant/Button'
 const HeroSection = () => {
     return <>
 
-        <div className="row " style={{marginTop : '5rem'}}>
+        <div className="row gap-5 gap-lg-0 mb-5  " style={{ marginTop: '7rem' }}>
             {/* hero section left side */}
 
-
-            <div className="col-12 col-lg-6 text-white">
+            <div style={{ position: 'relative', color: 'white' }}>
+                <img src={logo} alt="logo" className='image-fluid' style={{ maxWidth: '23rem', }} />
+                <p className='logoText_mb' style={{ position: 'absolute', top: '65%', left: '9%' }}>Ai driven manufturing solutions</p>
+            </div>
+            <div className="col-12 col-xl-5 col-lg-6 text-white">
                 <div>
-                    <div style={{ position: 'relative' }}>
-                        <img src={logo} alt="logo" className='image-fluid' style={{ maxWidth: '23rem', }} />
-                        <p style={{ position: 'absolute', top: '65%', left: '14%' }}>Ai driven manufturing solutions</p>
-                    </div>
-
                     <div className="row">
-                        <div className="col-12 col-lg-9">
-                            <p >A oportunidade que vc procurava para investir no proximo grande projeto de destaque no mundo da AI esta aqui, meet Ecofactor, the <b>Advanced AI-driven solution</b> para assistir fabricantes mundo afora, no processo de pesquisa, desenvolviemento e otimização de produtos utilizando cuting edge Ai technology.</p>
-                            <Button />
+                        <div className="col-12 col-lg-11">
+                            <p className='mt-3 fs-5' >The opportunity you've been looking for to invest in the next <b>big standout project</b> in the AI world is here. Meet <b>Ecofactor</b>, the advanced <b>AI-driven solution</b> to assist manufacturers worldwide in the research, development, and optimization of products using cutting-edge AI technology.
+                            </p>
+                            <img src={btnContact} alt="btn-contact" style={{ width: '9rem', marginTop: '1rem' }} />
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* hero section right side */}
-            <div className="col-12 col-lg-6">
-                <div className='ms-auto'>
-                    <img src={laptop} alt="logo" className='img-fluid '  />
+            <div className="col-12 col-xl-7 col-lg-5 relative mb-5 ">
+                <div style={{ position: 'relative', marginTop: '-60px' }} className='ms-auto laptop_mb'>
+                    <img src={circle} alt="logo" className='img-fluid laptopblobe_mb ' style={{ width: '85%' }} />
+                    <img src={laptop} alt="logo" className='img-fluid laptopImg_mb' style={{ position: 'absolute', left: '-60px', bottom: '-22px', height: '80%', }} />
+
+
                 </div>
 
 

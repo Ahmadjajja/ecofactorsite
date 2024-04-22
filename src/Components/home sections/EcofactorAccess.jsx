@@ -1,6 +1,12 @@
 import btnAccessEF from '../../Assets/BT_ACCESS.svg'
 
 const EcofactorAccess = () => {
+    // const navigate = useNavigate();
+    const handleImageClick = () => {
+        window.open('https://ecofactor-v2.netlify.app/', '_blank');
+    };
+
+
     return <>
         <div className="mt-5">
             <div className="row my-5 text-white">
@@ -13,7 +19,7 @@ const EcofactorAccess = () => {
                 </div>
                 <div className="col-12 col-lg-4 mt-5 ">
                     <div style={{ display: 'flex',  justifyContent : 'end',}} className='btnAccess_mb'>
-                        <img src={btnAccessEF} alt="btn-contact" className='img-fluid w-75 me-3' style={{marginTop : '30%',}} />
+                        <img src={btnAccessEF} alt="btn-contact" className='img-fluid w-75 me-3' style={{marginTop : '30%', cursor : 'pointer'}} onClick={handleImageClick} />
 
                     </div>
                 </div>

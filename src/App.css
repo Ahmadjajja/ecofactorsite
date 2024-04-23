@@ -13,7 +13,7 @@ body {
 }
 
 .ReactModal__Overlay--after-open {
-  background-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0.686) !important;
 }
 .ReactModal__Content--after-open {
   width: 50% !important;
@@ -77,8 +77,11 @@ body {
   .singleCircle_mb {
     bottom: 40rem !important;
   }
-  .ReactModal__Content--after-open{
+  .ReactModal__Content--after-open {
     width: 90% !important;
+  }
+  .cross-btn {
+    display: none !important;
   }
 }
 
@@ -88,6 +91,9 @@ body {
   }
   .laptop_mb {
     margin-top: 0 !important;
+  }
+  .cross-btn {
+    display: none !important;
   }
   .btnAccess_mb {
     display: block !important;
@@ -104,7 +110,7 @@ body {
   .singleCircle_mb {
     bottom: 40rem !important;
   }
-  .ReactModal__Content--after-open{
+  .ReactModal__Content--after-open {
     width: 90% !important;
   }
 }
@@ -116,10 +122,13 @@ body {
   .circleThick_mb {
     width: 23rem !important;
   }
+  .cross-btn {
+    display: none !important;
+  }
   .singleCircle_mb {
     bottom: 40rem !important;
   }
-  .ReactModal__Content--after-open{
+  .ReactModal__Content--after-open {
     width: 70% !important;
   }
 }

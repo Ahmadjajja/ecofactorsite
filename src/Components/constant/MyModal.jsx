@@ -1,4 +1,6 @@
 import Modal from 'react-modal';
+import { RxCross2 } from "react-icons/rx";
+import { useEffect } from 'react';
 
 const customStyles = {
     top: '50%',
@@ -10,18 +12,28 @@ const customStyles = {
 
 };
 const MyModal = ({ setmodal, modal }) => {
+    useEffect(() => {
+      
+        if (modal) {
+            document.body.style.overflowY = 'hidden';
+        } else {
+            document.body.style.overflowY = 'auto';
+        }
 
-    function openModal() {
-        setmodal(true);
-    }
+        // Cleanup function
+        return () => {
+            document.body.style.overflowY = 'auto';
+        };
+    }, [modal]);
 
-
-
+    
     function closeModal() {
         setmodal(false);
     }
     return <>
         <div>
+            <button onClick={() => setmodal(false)} className='cross-btn' style={{display : modal ? 'block' : 'none', position: 'absolute', right: '20%', top : '3.2%', zIndex : '10', backgroundColor : 'transparent', color : 'orange', border : '0', fontSize : '2.5rem' }}><RxCross2 /></button>
+
             <Modal
                 isOpen={modal}
                 onRequestClose={closeModal}

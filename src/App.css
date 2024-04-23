@@ -12,6 +12,21 @@ body {
   /* font-weight: 100 !important; */
 }
 
+.ReactModal__Overlay--after-open {
+  background-color: rgba(0, 0, 0, 0.686) !important;
+}
+.ReactModal__Content--after-open {
+  width: 50% !important;
+  height: 60% !important;
+  margin: 0 auto !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  margin-right: -50% !important;
+  transform: translate(-50%, -50%) !important;
+  overflow: hidden !important;
+}
 /* media query */
 @media only screen and (max-width: 768px) {
   .colorbarTop_mb {
@@ -20,7 +35,7 @@ body {
   .circleThick_mb {
     width: 12rem !important;
     right: -80px !important;
-    top: -80px  !important;
+    top: -80px !important;
   }
   .logoText_mb {
     left: 90px !important;
@@ -47,7 +62,7 @@ body {
   .inputs_mb textarea {
     width: 100% !important;
   }
-  .inputs_mb img {
+  .inputs_mb button {
     margin-left: auto !important;
   }
   .circleThin_mb {
@@ -56,11 +71,17 @@ body {
   .colorbarBottom_mb {
     bottom: -5px !important;
   }
-  .singleCircleOne_mb{
+  .singleCircleOne_mb {
     bottom: 142rem !important;
   }
-  .singleCircle_mb{
+  .singleCircle_mb {
     bottom: 40rem !important;
+  }
+  .ReactModal__Content--after-open {
+    width: 90% !important;
+  }
+  .cross-btn {
+    display: none !important;
   }
 }
 
@@ -68,8 +89,11 @@ body {
   .colorbarTop_mb {
     top: -19px !important;
   }
-  .laptop_mb{
+  .laptop_mb {
     margin-top: 0 !important;
+  }
+  .cross-btn {
+    display: none !important;
   }
   .btnAccess_mb {
     display: block !important;
@@ -81,10 +105,13 @@ body {
   .circleThick_mb {
     width: 13rem !important;
     right: -80px !important;
-    top: -80px  !important;
+    top: -80px !important;
   }
-  .singleCircle_mb{
+  .singleCircle_mb {
     bottom: 40rem !important;
+  }
+  .ReactModal__Content--after-open {
+    width: 90% !important;
   }
 }
 
@@ -95,7 +122,13 @@ body {
   .circleThick_mb {
     width: 23rem !important;
   }
-  .singleCircle_mb{
+  .cross-btn {
+    display: none !important;
+  }
+  .singleCircle_mb {
     bottom: 40rem !important;
+  }
+  .ReactModal__Content--after-open {
+    width: 70% !important;
   }
 }

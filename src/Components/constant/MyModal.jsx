@@ -13,7 +13,7 @@ const customStyles = {
 };
 const MyModal = ({ setmodal, modal }) => {
     useEffect(() => {
-      
+
         if (modal) {
             document.body.style.overflowY = 'hidden';
         } else {
@@ -26,25 +26,48 @@ const MyModal = ({ setmodal, modal }) => {
         };
     }, [modal]);
 
-    
+
     function closeModal() {
         setmodal(false);
     }
     return <>
-        <div>
-            <button onClick={() => setmodal(false)} className='cross-btn' style={{display : modal ? 'block' : 'none', position: 'absolute', right: '20%', top : '3.2%', zIndex : '10', backgroundColor : 'transparent', color : 'orange', border : '0', fontSize : '2.5rem' }}><RxCross2 /></button>
-
-            <Modal
-                isOpen={modal}
-                onRequestClose={closeModal}
-                style={customStyles}
-
-            >
-                <iframe style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} src="https://www.youtube.com/embed/QmuFP2jQMGw" allow='autoplay' width={'100%'} height={'100%'}></iframe>
 
 
-            </Modal>
-        </div>
+
+
+        <Modal
+            isOpen={modal}
+            onRequestClose={closeModal}
+            style={customStyles}
+        >
+                {/* <button
+                    onClick={closeModal}
+                    className='cross-btn'
+                    style={{
+                        position: 'absolute',
+                        right: '-10%',
+                        top: '-5%',
+                        zIndex: '10',
+                        backgroundColor: 'transparent',
+                        color: 'orange',
+                        border: '0',
+                        fontSize: '2.5rem',
+                        display: modal ? 'block' : 'none'
+                    }}>
+                    <RxCross2 />
+                </button> */}
+
+
+            <iframe
+                style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                src="https://www.youtube.com/embed/O67h7me54aI"
+                allow='autoplay'
+                width={'100%'}
+                height={'100%'}
+            ></iframe>
+
+        </Modal>
+
     </>;
 };
 

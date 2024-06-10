@@ -1,5 +1,7 @@
 import BTN_DATASET from '../../Assets/BT_DATASET2.svg'
 import BTN_DEMO from '../../Assets/B T_PLAY_VIDEO2.svg'
+import MyModal from '../constant/MyModal';
+import { useState } from 'react';
 
 const DemoDataset = () => {
     const handleDownload = () => {
@@ -9,6 +11,9 @@ const DemoDataset = () => {
         anchor.download = 'DATASET_ECOFACTOR.zip';
         anchor.click();
     };
+
+    const [demoVideo, setdemoVideo] = useState(false);
+    
 
 
     return <>
@@ -20,7 +25,7 @@ const DemoDataset = () => {
                         <h3 className='mb-lg-4 mb-3' style={{ color: '#76b870' }}>VIDEO DEMO - EcoFactor v0.2 </h3>
                         <p className="fs-5 text-white">Check out our first demo video showcasing Ecofactor v0.2 in action, generating <br /> interesting proof-of-concepts for various applications and industries, demonstrating <br /> the great versatility of this promising tool.</p>
                         <div className='d-lg-flex justify-content-center'>
-                            <img className='me-lg-5' id='#contact' src={BTN_DEMO} alt="btn-contact" style={{ width: '50%', marginTop: '1rem', cursor: 'pointer', }} />
+                            <img onClick={() => setdemoVideo(true)} className='me-lg-5' id='#contact' src={BTN_DEMO} alt="btn-contact" style={{ width: '50%', marginTop: '1rem', cursor: 'pointer', }} />
                         </div>
 
                     </div>
@@ -38,6 +43,9 @@ const DemoDataset = () => {
 
             </div>
         </div>
+
+        <MyModal modal={demoVideo} setmodal={setdemoVideo} />
+
     </>;
 };
 

@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 const HeroSection = () => {
     const [modal, setmodal] = useState(false);
-    
+
 
     const scrollToContact = () => {
         const contactSection = document.getElementById('contact');
@@ -47,11 +47,7 @@ const HeroSection = () => {
                 <div style={{ position: 'relative', marginTop: '-60px' }} className='ms-auto laptop_mb'>
                     <img src={circle} alt="logo" className='img-fluid laptopblobe_mb ' style={{ width: '85%' }} />
                     <img src={laptop} onClick={() => setmodal(true)} alt="logo" className='img-fluid laptopImg_mb' style={{ cursor: 'pointer', position: 'absolute', left: '-60px', bottom: '-22px', height: '80%', }} />
-
-
                 </div>
-
-
             </div>
         </div>
 

@@ -14,6 +14,9 @@ body {
 
 .ReactModal__Overlay--after-open {
   background-color: rgba(0, 0, 0, 0.686) !important;
+  /* z-index: 2 !important; */
+  cursor: pointer;
+
 }
 .ReactModal__Content--after-open {
   width: 50% !important;
@@ -95,9 +98,9 @@ body {
   .laptop_mb {
     margin-top: 0 !important;
   }
-  .cross-btn {
+  /* .cross-btn {
     display: none !important;
-  }
+  } */
   .btnAccess_mb {
     display: block !important;
   }

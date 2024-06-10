@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
             <img className='d-none d-lg-block' src={Ball} alt="c-bar" style={{ width: '12rem', position: 'absolute', top: '41rem', left: '-100px', zIndex: '-1' }} />
             <img className='img-fluid d-none d-lg-block' src={circles} alt="c-bar" style={{ width: '18rem', position: 'absolute', bottom: '49rem', left: '-190px', zIndex: '-1' }} />
             <img className='' src={colorbar} alt="c-bar " style={{ width : '90%', position: 'absolute', bottom: '0px', right: '-22px', zIndex: '-1' }} />
-            <img className='img-fluid singleCircleOne_mb ' src={singleCircle} alt="c-bar" style={{ width: '3rem', position: 'absolute', bottom: '112rem', right: '10%', zIndex: '-1' }} />
+            <img className='img-fluid singleCircleOne_mb ' src={singleCircle} alt="c-bar" style={{ width: '3rem', position: 'absolute', bottom: '135rem', right: '10%', zIndex: '-1' }} />
             <img className='img-fluid singleCircle_mb' src={singleCircle} alt="c-bar" style={{ width: '1rem', position: 'absolute', bottom: '47rem', right: '20%', zIndex: '-1' }} />
 
 

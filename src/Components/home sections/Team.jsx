@@ -22,7 +22,7 @@ const Team = () => {
     ]
 
     return <>
-        <h2 className="text-center mb-5 " style={{ color: '#76b870', marginTop : '7rem' }}>ECOFACTOR TEAM</h2>
+        <h2 className="text-center mb-5 " style={{ color: '#76b870', marginTop : '7rem' }}>EcoFactor Team</h2>
         <div className="row  mb-3 ">
             <div className="col-xl-9 mx-auto mb-5 ">
                 <div className="row text-white mx-auto mb-4 ">

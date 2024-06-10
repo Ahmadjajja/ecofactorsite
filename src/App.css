@@ -83,6 +83,9 @@ body {
   .cross-btn {
     display: none !important;
   }
+  .dashed-line{
+    border-right: 0 !important;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -112,6 +115,9 @@ body {
   }
   .ReactModal__Content--after-open {
     width: 90% !important;
+  }
+  .dashed-line{
+    border-right: 0 !important;
   }
 }
 

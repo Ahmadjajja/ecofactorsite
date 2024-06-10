@@ -30,7 +30,7 @@ const Contact = () => {
     return <>
         <form ref={form} className="row " style={{ marginBottom: '5rem' }} onSubmit={sendEmail} id='contact'>
             <div className="col-12 text-white my-4 ">
-                <h2 style={{ color: '#76b870' }}>CONTACT US:</h2>
+                <h2 style={{ color: '#76b870' }}>Contact Us:</h2>
 
 
                 <div className="row ">

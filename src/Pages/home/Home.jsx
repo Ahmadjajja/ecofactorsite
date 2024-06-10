@@ -1,5 +1,6 @@
 import Layout from "../../Components/constant/Layout";
 import Contact from "../../Components/home sections/Contact";
+import DemoDataset from "../../Components/home sections/DemoDataset";
 import EcofactorAccess from "../../Components/home sections/EcofactorAccess";
 import HeroSection from "../../Components/home sections/HeroSection";
 import MainFeatures from "../../Components/home sections/MainFeatures";
@@ -14,6 +15,7 @@ const Home = () => {
         <HeroSection />
         <WhyEcofactor />
         <MainFeatures />
+        <DemoDataset />
         <EcofactorAccess />
         <Team />
         <WhoWeAre />
